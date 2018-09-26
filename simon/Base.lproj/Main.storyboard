@@ -81,14 +81,6 @@
                         <outlet property="colorsFrame" destination="MZq-yp-j2z" id="kHn-Mo-gPB"/>
                         <outlet property="messageLabel" destination="Bg8-UG-Bey" id="Whh-aJ-AXG"/>
                         <outlet property="onStartButtonTapped" destination="NAk-UK-DLg" id="uiY-hB-lm4"/>
-                        <outletCollection property="colorViews" destination="Qjv-oG-8Du" collectionClass="NSMutableArray" id="xsH-36-qxB"/>
-                        <outletCollection property="colorViews" destination="e6m-Ty-aZd" collectionClass="NSMutableArray" id="H3C-gc-Dk4"/>
-                        <outletCollection property="colorViews" destination="Qjv-oG-8Du" collectionClass="NSMutableArray" id="hP1-hX-tQK"/>
-                        <outletCollection property="colorViews" destination="Qjv-oG-8Du" collectionClass="NSMutableArray" id="UGX-PA-teF"/>
-                        <outletCollection property="greenColorViews" destination="Qjv-oG-8Du" collectionClass="NSMutableArray" id="QEq-ly-KvM"/>
-                        <outletCollection property="redColorViews" destination="e6m-Ty-aZd" collectionClass="NSMutableArray" id="CLd-Uu-RZ4"/>
-                        <outletCollection property="yellowColorViews" destination="fCD-VV-jWn" collectionClass="NSMutableArray" id="rxq-AG-wMl"/>
-                        <outletCollection property="blueColorViews" destination="311-7O-yCn" collectionClass="NSMutableArray" id="84j-32-opX"/>
                         <outletCollection property="colorDisplays" destination="Qjv-oG-8Du" collectionClass="NSMutableArray" id="AGc-4n-gx9"/>
                         <outletCollection property="colorDisplays" destination="e6m-Ty-aZd" collectionClass="NSMutableArray" id="kj5-q4-7ly"/>
                         <outletCollection property="colorDisplays" destination="fCD-VV-jWn" collectionClass="NSMutableArray" id="dcX-Sg-6Pm"/>

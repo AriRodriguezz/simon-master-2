@@ -7,10 +7,10 @@
 //
 
 import UIKit
-    import AVFoundation
+import AVFoundation
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet var colorDisplays: [UIView]!
     @IBOutlet weak var onStartButtonTapped: UIButton!
     @IBOutlet weak var messageLabel: UILabel!
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
             do{
                 self.sound = try AVAudioPlayer(contentsOf: url)
                 self.sound?.play()
-            
+                
             }
             catch {
                 print("cant find file")
@@ -71,14 +71,27 @@ class ViewController: UIViewController {
             }, completion: nil)
         }
     }
-    
-    
-    
-    
-    
-    
-
-    
+    func displayPattern() {
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(ViewController.nextColor), userInfo: nil, repeats: true)
+    }
+    @objc func nextColor() {
+        if index < pattern.count {
+            flashColor(number: pattern[index])
+            index += 1
+        }
+        else {
+            timer.invalidate()
+            index = 0
+            playerTurn = true
+            messageLabel.text  = "your .turn"
+        }
+        
+        
+        
+        
+        
+        
+        
+    }
     
 }
-
